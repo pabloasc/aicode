@@ -3,8 +3,22 @@
 @tailwind utilities;
 
 @layer base {
+  html, body {
+    @apply min-h-screen bg-gradient-to-br from-gray-50 to-gray-100;
+  }
+  
   body {
     @apply antialiased text-gray-900;
+  }
+
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
 }
 

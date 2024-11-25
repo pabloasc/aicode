@@ -1,50 +1,56 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { AssistantCard } from './components/AssistantCard';
 import { Tabs } from './components/Tabs';
+import { Footer } from './components/Footer';
 import { assistants } from './data/assistants';
 
-function App() {
-  const [votes, setVotes] = useState<Record<string, number>>({});
+export default function App() {
   const [activeTab, setActiveTab] = useState<'all' | 'beginner' | 'expert'>('all');
-
-  const handleVote = (id: string) => {
-    setVotes(prev => ({
-      ...prev,
-      [id]: (prev[id] || 0) + 1
-    }));
-  };
 
   const filteredAssistants = assistants.filter(assistant => {
     if (activeTab === 'all') return true;
     return assistant.experienceLevel === activeTab;
   });
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      <div className="container mx-auto px-4 py-16">
-        <header className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-            AI Coding Assistants
-          </h1>
-          <p className="text-xl text-gray-600 mb-8">
-            Discover the best AI-powered coding companions
-          </p>
-          <Tabs activeTab={activeTab} onChange={setActiveTab} />
-        </header>
+  useEffect(() => {
+    const tabTitles = {
+      all: 'All AI Coding Tools',
+      beginner: 'Best AI Coding Tools for Beginners',
+      expert: 'Advanced AI Coding Tools for Developers'
+    };
+    document.title = `${tabTitles[activeTab]} | aicode.fyi`;
+  }, [activeTab]);
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredAssistants.map((assistant) => (
-            <AssistantCard
-              key={assistant.id}
-              assistant={assistant}
-              votes={votes}
-              onVote={handleVote}
-            />
-          ))}
+  return (
+    <>
+      <Helmet>
+        <meta name="description" content={`Compare the best ${activeTab === 'all' ? '' : activeTab + ' '} AI coding tools and assistants. Features GitHub Copilot, Cursor, Bolt, v0, and more. Updated for 2024.`} />
+      </Helmet>
+      
+      <main className="flex-grow">
+        <div className="container py-16">
+          <header className="text-center mb-12">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+              aicode.fyi
+            </h1>
+            <p className="text-xl text-gray-600 mb-8">
+              Compare and choose the perfect AI-powered coding companion for your development needs
+            </p>
+            <Tabs activeTab={activeTab} onChange={setActiveTab} />
+          </header>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredAssistants.map((assistant) => (
+              <AssistantCard
+                key={assistant.id}
+                assistant={assistant}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </main>
+      <Footer />
+    </>
   );
 }
-
-export default App;

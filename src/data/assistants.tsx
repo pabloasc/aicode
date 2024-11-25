@@ -1,5 +1,5 @@
 import React from 'react';
-import { GithubLogo, Lightning, Cloud, Terminal, Sparkle, CirclesFour } from '@phosphor-icons/react';
+import { GithubLogo, Lightning, Cloud, Terminal, Sparkle, CirclesFour, Wind, Code, BracketsCurly } from '@phosphor-icons/react';
 import { type Assistant } from '../types';
 
 export const assistants: Assistant[] = [
@@ -7,13 +7,13 @@ export const assistants: Assistant[] = [
     id: 'github-copilot',
     name: 'GitHub Copilot',
     icon: <GithubLogo size={32} weight="fill" />,
-    description: 'AI pair programmer that helps you write code faster with smart completions and suggestions.',
+    description: 'The pioneer in AI pair programming, offering real-time suggestions and whole-line completions powered by OpenAI Codex.',
     features: [
       'Real-time code suggestions',
       'Multi-language support',
-      'IDE integration',
-      'Context-aware completions',
-      'Natural language to code'
+      'VS Code & JetBrains integration',
+      'GitHub integration',
+      '$10/month or $100/year'
     ],
     link: 'https://github.com/features/copilot',
     experienceLevel: 'expert'
@@ -22,75 +22,105 @@ export const assistants: Assistant[] = [
     id: 'cursor',
     name: 'Cursor',
     icon: <CirclesFour size={32} weight="fill" />,
-    description: 'AI-first code editor that helps you write, edit, and understand code faster.',
+    description: 'Free VS Code-based editor with GPT-4 integration, offering powerful code editing and generation capabilities.',
     features: [
-      'Built-in AI chat',
+      'Built on VS Code',
+      'GPT-4 integration',
+      'Chat interface',
       'Code explanation',
-      'Automatic refactoring',
-      'Smart code navigation',
-      'Custom IDE features'
+      'Free to use'
     ],
     link: 'https://cursor.sh',
-    experienceLevel: 'beginner'
+    experienceLevel: 'expert'
   },
   {
     id: 'bolt',
     name: 'Bolt',
     icon: <Lightning size={32} weight="fill" />,
-    description: 'Interactive AI coding environment with real-time collaboration and instant previews.',
+    description: 'Browser-based development environment optimized for React, perfect for rapid prototyping and instant project setup.',
     features: [
-      'Live preview environment',
+      'Browser-based IDE',
       'Real-time collaboration',
-      'Smart code generation',
-      'Project templates',
-      'Instant deployment'
+      'React-optimized',
+      'Instant deployment',
+      'Free during beta'
     ],
     link: 'https://bolt.new',
     experienceLevel: 'beginner'
   },
   {
-    id: 'claude',
-    name: 'Claude',
-    icon: <Cloud size={32} weight="fill" />,
-    description: 'Anthropic\'s AI assistant capable of complex coding tasks and technical discussions.',
+    id: 'v0',
+    name: 'v0',
+    icon: <Code size={32} weight="fill" />,
+    description: 'AI-powered full-stack development platform with strong UI capabilities and seamless Vercel deployment.',
     features: [
-      'Advanced reasoning',
-      'Code review capabilities',
-      'Technical writing',
-      'Security analysis',
-      'Documentation generation'
+      'UI-focused development',
+      'Full-stack support',
+      'shadcn/ui integration',
+      'Vercel deployment',
+      'Free during beta'
     ],
-    link: 'https://anthropic.com/claude',
+    link: 'https://v0.dev',
+    experienceLevel: 'beginner'
+  },
+  {
+    id: 'tabnine',
+    name: 'Tabnine',
+    icon: <Sparkle size={32} weight="fill" />,
+    description: 'AI code completion tool with both cloud and local processing options, focusing on privacy and personalization.',
+    features: [
+      'Local AI processing option',
+      'Multi-IDE support',
+      'Team collaboration',
+      'Custom model training',
+      'From $12/month'
+    ],
+    link: 'https://www.tabnine.com',
     experienceLevel: 'expert'
   },
   {
     id: 'amazon-codewhisperer',
     name: 'Amazon CodeWhisperer',
     icon: <Terminal size={32} weight="fill" />,
-    description: 'AI coding companion that provides real-time suggestions based on AWS best practices.',
+    description: 'AWS-integrated coding companion with strong security features and free individual tier.',
     features: [
       'AWS integration',
       'Security scanning',
-      'Automated code reviews',
       'Reference tracking',
-      'Multi-runtime support'
+      'Multi-IDE support',
+      'Free for individuals'
     ],
     link: 'https://aws.amazon.com/codewhisperer',
     experienceLevel: 'expert'
   },
   {
-    id: 'tabnine',
-    name: 'Tabnine',
-    icon: <Sparkle size={32} weight="fill" />,
-    description: 'AI code completion tool that learns your coding patterns and preferences.',
+    id: 'replit',
+    name: 'Replit',
+    icon: <BracketsCurly size={32} weight="fill" />,
+    description: 'Collaborative browser-based IDE with built-in AI features and hosting capabilities.',
     features: [
-      'Personalized suggestions',
-      'Local processing option',
-      'Team learning',
-      'Privacy focused',
-      'Multiple IDE support'
+      'Browser-based development',
+      'AI code completion',
+      'Built-in hosting',
+      'Real-time collaboration',
+      'Free tier available'
     ],
-    link: 'https://www.tabnine.com',
+    link: 'https://replit.com',
+    experienceLevel: 'beginner'
+  },
+  {
+    id: 'claude',
+    name: 'Claude',
+    icon: <Cloud size={32} weight="fill" />,
+    description: 'Versatile AI assistant with strong coding capabilities and technical understanding.',
+    features: [
+      'Advanced reasoning',
+      'Code generation',
+      'Technical writing',
+      'Security analysis',
+      'Free tier available'
+    ],
+    link: 'https://anthropic.com/claude',
     experienceLevel: 'expert'
   }
 ];

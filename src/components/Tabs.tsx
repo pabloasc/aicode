@@ -8,8 +8,8 @@ interface TabsProps {
 export function Tabs({ activeTab, onChange }: TabsProps) {
   const tabs = [
     { id: 'all', label: 'All Assistants' },
-    { id: 'beginner', label: 'No Coding Experience' },
-    { id: 'expert', label: 'Expert Coders' },
+    { id: 'beginner', label: 'Browser-based' },
+    { id: 'expert', label: 'IDE-based' },
   ] as const;
 
   return (
