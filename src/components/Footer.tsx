@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { GithubLogo, TwitterLogo, LinkedinLogo } from '@phosphor-icons/react';
 
 export function Footer() {
@@ -16,27 +17,18 @@ export function Footer() {
             <h3 className="text-xl font-bold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-white transition-colors">About</a>
+                <Link to="/" className="hover:text-white transition-colors">Home</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">Submit Assistant</a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+                <Link to="/submit" className="hover:text-white transition-colors">Submit Assistant</Link>
               </li>
             </ul>
           </div>
           <div>
             <h3 className="text-xl font-bold text-white mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://github.com/pabloasc/aicode" className="hover:text-white transition-colors">
                 <GithubLogo size={24} weight="fill" />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <TwitterLogo size={24} weight="fill" />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <LinkedinLogo size={24} weight="fill" />
               </a>
             </div>
           </div>

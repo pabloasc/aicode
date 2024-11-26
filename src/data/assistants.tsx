@@ -1,5 +1,4 @@
-import React from 'react';
-import { GithubLogo, Lightning, Cloud, Terminal, Sparkle, CirclesFour, Wind, Code, BracketsCurly } from '@phosphor-icons/react';
+import { GithubLogo, Lightning, Terminal } from '@phosphor-icons/react';
 import { type Assistant } from '../types';
 
 export const assistants: Assistant[] = [
@@ -21,14 +20,14 @@ export const assistants: Assistant[] = [
   {
     id: 'cursor',
     name: 'Cursor',
-    icon: <CirclesFour size={32} weight="fill" />,
-    description: 'Free VS Code-based editor with GPT-4 integration, offering powerful code editing and generation capabilities.',
+    icon: <img width={32} src="/logo-cursor-ai.webp" />,
+    description: 'Free VS Code-based editor with GPT-4 and Claude-3.5 Sonnet integrations, offering powerful code editing and generation capabilities.',
     features: [
       'Built on VS Code',
-      'GPT-4 integration',
+      'GPT-4 and Claude-3.5 Sonnet integrations (PRO Models)',
       'Chat interface',
       'Code explanation',
-      'Free to use'
+      'Free to use (Limited for PRO models)'
     ],
     link: 'https://cursor.sh',
     experienceLevel: 'expert'
@@ -51,7 +50,7 @@ export const assistants: Assistant[] = [
   {
     id: 'v0',
     name: 'v0',
-    icon: <Code size={32} weight="fill" />,
+    icon: <img width={32} src="https://v0.dev/assets/icon.svg" />,
     description: 'AI-powered full-stack development platform with strong UI capabilities and seamless Vercel deployment.',
     features: [
       'UI-focused development',
@@ -66,7 +65,7 @@ export const assistants: Assistant[] = [
   {
     id: 'tabnine',
     name: 'Tabnine',
-    icon: <Sparkle size={32} weight="fill" />,
+    icon: <img width={32} src="/tabnine.png" />,
     description: 'AI code completion tool with both cloud and local processing options, focusing on privacy and personalization.',
     features: [
       'Local AI processing option',
@@ -96,7 +95,7 @@ export const assistants: Assistant[] = [
   {
     id: 'replit',
     name: 'Replit',
-    icon: <BracketsCurly size={32} weight="fill" />,
+    icon: <img width={32} src="/replit_logo.jpg" />,
     description: 'Collaborative browser-based IDE with built-in AI features and hosting capabilities.',
     features: [
       'Browser-based development',
@@ -109,18 +108,18 @@ export const assistants: Assistant[] = [
     experienceLevel: 'beginner'
   },
   {
-    id: 'claude',
-    name: 'Claude',
-    icon: <Cloud size={32} weight="fill" />,
-    description: 'Versatile AI assistant with strong coding capabilities and technical understanding.',
+    id: 'windsurf',
+    name: 'Windsurf AI',
+    icon: <img width={32} src="https://codeium.com/logo/windsurf_teal_logo.svg" />,
+    description: 'Revolutionary AI-powered development platform that transforms natural language into full-stack applications.',
     features: [
-      'Advanced reasoning',
-      'Code generation',
-      'Technical writing',
-      'Security analysis',
-      'Free tier available'
+      'Natural language to code',
+      'Full-stack app generation',
+      'Component library',
+      'Real-time preview',
+      'Free during beta'
     ],
-    link: 'https://anthropic.com/claude',
+    link: 'https://windsurf.ai',
     experienceLevel: 'expert'
   }
 ];
