@@ -27,6 +27,9 @@ export default {
           900: '#111827',
         },
       },
+      fontFamily: {
+        outfit: ['Outfit', 'sans-serif'],
+      },
     },
   },
   plugins: [],

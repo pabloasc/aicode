@@ -35,7 +35,7 @@ export const assistants: Assistant[] = [
   {
     id: 'bolt',
     name: 'Bolt',
-    icon: <Lightning size={32} weight="fill" />,
+    icon: <img width={32} src="/bolt.png" />,
     description: 'Browser-based development environment optimized for React, perfect for rapid prototyping and instant project setup.',
     features: [
       'Browser-based IDE',
@@ -50,7 +50,7 @@ export const assistants: Assistant[] = [
   {
     id: 'v0',
     name: 'v0',
-    icon: <img width={32} src="https://v0.dev/assets/icon.svg" />,
+    icon: <img width={32} src="/v0.png" />,
     description: 'AI-powered full-stack development platform with strong UI capabilities and seamless Vercel deployment.',
     features: [
       'UI-focused development',

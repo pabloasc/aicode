@@ -31,7 +31,7 @@ export function Home() {
       <main className="flex-grow">
         <div className="container py-16">
           <header className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 font-outfit tracking-tight">
               aicode.fyi
             </h1>
             <SponsorBanner />
