@@ -8,35 +8,38 @@ interface AssistantCardProps {
 
 export function AssistantCard({ assistant }: AssistantCardProps) {
   return (
-    <div className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm hover:shadow-md hover:transform hover:-translate-y-1 transition-all duration-300">
-      <div className="flex items-center space-x-3 mb-4">
-        <div className="p-2 bg-gray-100 rounded-lg text-gray-900">
+    <article className="bg-white p-6 h-full flex flex-col">
+      <div className="flex items-center space-x-4 mb-6">
+        <div className="p-3 bg-gray-50">
           {assistant.icon}
         </div>
-        <h2 className="text-2xl font-bold text-gray-900">{assistant.name}</h2>
+        <h2 className="text-xl font-medium">{assistant.name}</h2>
       </div>
 
-      <p className="text-gray-600 mb-4">
+      <p className="mb-6 text-base leading-relaxed flex-grow">
         {assistant.description}
       </p>
 
-      <ul className="space-y-2 mb-4">
-        {assistant.features.map((feature, index) => (
-          <li key={index} className="flex items-center text-gray-600">
-            <Star size={16} className="mr-2 flex-shrink-0 text-gray-400" />
-            {feature}
-          </li>
-        ))}
-      </ul>
+      <div className="mb-6">
+        <h3 className="text-xs uppercase tracking-wider mb-3 text-gray-500">Notable Features</h3>
+        <ul className="space-y-2">
+          {assistant.features.map((feature, index) => (
+            <li key={index} className="flex items-start">
+              <Star size={12} className="mr-2 flex-shrink-0 mt-1.5" />
+              <span className="text-sm">{feature}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <a
         href={assistant.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block bg-gray-900 hover:bg-gray-800 transition-colors px-4 py-2 rounded-lg text-white font-medium"
+        className="inline-block border-b border-black hover:text-accent transition-colors text-sm"
       >
-        Learn More
+        Read More
       </a>
-    </div>
+    </article>
   );
 }

@@ -13,16 +13,16 @@ export function Tabs({ activeTab, onChange }: TabsProps) {
   ] as const;
 
   return (
-    <div className="flex justify-center space-x-2 mb-8">
+    <div className="flex justify-center space-x-8 mb-12">
       {tabs.map(({ id, label }) => (
         <button
           key={id}
           onClick={() => onChange(id)}
           className={`
-            px-6 py-3 rounded-lg font-medium transition-all duration-200
+            px-4 py-3 font-medium transition-all duration-200 relative
             ${activeTab === id
-              ? 'bg-gray-900 text-white shadow-lg'
-              : 'bg-white text-gray-700 hover:bg-gray-100'
+              ? 'text-black after:absolute after:bottom-[-2px] after:left-0 after:w-full after:h-[1px] after:bg-gray-200'
+              : 'text-gray-500 hover:text-black'
             }
           `}
         >

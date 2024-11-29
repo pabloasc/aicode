@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { AssistantCard } from '../components/AssistantCard';
 import { Tabs } from '../components/Tabs';
 import { SponsorBanner } from '../components/SponsorBanner';
+import { Header } from '../components/Header';
 import { assistants } from '../data/assistants';
 
 export function Home() {
@@ -28,27 +29,23 @@ export function Home() {
         <meta name="description" content={`Compare the best ${activeTab === 'all' ? '' : activeTab + ' '} AI coding tools and assistants. Features GitHub Copilot, Cursor, Bolt, v0, and more. Updated for 2024.`} />
       </Helmet>
       
-      <main className="flex-grow">
-        <div className="container py-16">
-          <header className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4 font-outfit tracking-tight">
-              aicode.fyi
-            </h1>
-            <SponsorBanner />
-            <p className="text-xl text-gray-600 mb-8">
-              Compare and choose the perfect AI-powered coding companion for your development needs
-            </p>
-            <Tabs activeTab={activeTab} onChange={setActiveTab} />
-          </header>
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
+        <Header />
+        <div className="mb-12">
+          <SponsorBanner />
+          <p className="text-xl mb-12 max-w-3xl mx-auto text-center">
+            Compare and choose the perfect AI-powered coding companion
+          </p>
+          <Tabs activeTab={activeTab} onChange={setActiveTab} />
+        </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredAssistants.map((assistant) => (
-              <AssistantCard
-                key={assistant.id}
-                assistant={assistant}
-              />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredAssistants.map((assistant) => (
+            <AssistantCard
+              key={assistant.id}
+              assistant={assistant}
+            />
+          ))}
         </div>
       </main>
     </>

@@ -21,7 +21,93 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom styles for New Yorker look -->
+    <style>
+      :root {
+        --font-body: 'Libre Caslon Text', 'EB Garamond', serif;
+        --color-text: #000000;
+        --color-background: #ffffff;
+        --color-accent: #c41e3a;
+      }
+      
+      body {
+        font-family: var(--font-body);
+        color: var(--color-text);
+        background-color: var(--color-background);
+        line-height: 1.6;
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-body);
+        font-weight: 700;
+        line-height: 1.2;
+        margin-top: 2em;
+        margin-bottom: 0.5em;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        border-bottom: 2px solid var(--color-text);
+        padding-bottom: 0.5em;
+      }
+
+      p {
+        margin-bottom: 1.5em;
+        font-size: 1.1rem;
+      }
+
+      .article-body {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .dropcap {
+        float: left;
+        font-size: 4em;
+        line-height: 0.8;
+        padding-right: 0.1em;
+        margin-top: 0.1em;
+      }
+
+      .article-meta {
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 2em;
+        font-size: 0.9em;
+      }
+
+      .article-section {
+        margin-bottom: 2em;
+      }
+
+      blockquote {
+        margin: 2em 0;
+        padding: 1em 2em;
+        border-left: 3px solid var(--color-accent);
+        font-style: italic;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          font-size: 16px;
+        }
+        
+        .article-body {
+          padding: 1rem;
+        }
+        
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
     
     <!-- Primary Meta Tags -->
     <title>aicode.fyi | Best AI Coding Tools & Assistants 2025</title>

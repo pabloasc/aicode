@@ -124,9 +124,9 @@ export const assistants: Assistant[] = [
   },
   {
     id: 'lovable',
-    name: 'Lovable',
+    name: 'Lovable.dev',
     icon: <Heart size={32} weight="fill" />,
-    description: 'Build faster with AI that understands your needs. Get working code from natural language. Chat about your product idea in English. AI generates production-ready code instantly.',
+    description: 'Build faster with AI that understands your needs. Get working code from natural language. Chat about your product idea in English.',
     features: [
       'Task automation',
       'Data analysis',
