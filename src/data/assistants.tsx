@@ -1,4 +1,4 @@
-import { GithubLogo, Lightning, Terminal } from '@phosphor-icons/react';
+import { GithubLogo, Heart, Terminal } from '@phosphor-icons/react';
 import { type Assistant } from '../types';
 
 export const assistants: Assistant[] = [
@@ -121,5 +121,20 @@ export const assistants: Assistant[] = [
     ],
     link: 'https://windsurf.ai',
     experienceLevel: 'expert'
+  },
+  {
+    id: 'lovable',
+    name: 'Lovable',
+    icon: <Heart size={32} weight="fill" />,
+    description: 'Build faster with AI that understands your needs. Get working code from natural language. Chat about your product idea in English. AI generates production-ready code instantly.',
+    features: [
+      'Task automation',
+      'Data analysis',
+      'User-friendly interface',
+      'Real-time insights',
+      'Scalability'
+    ],
+    link: 'https://lovable.dev',
+    experienceLevel: 'beginner'
   }
 ];
