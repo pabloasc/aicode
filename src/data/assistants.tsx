@@ -136,5 +136,20 @@ export const assistants: Assistant[] = [
     ],
     link: 'https://lovable.dev',
     experienceLevel: 'beginner'
+  },
+  {
+    id: 'supermaven',
+    name: 'Supermaven',
+    icon: <img width={32} src="/supermaven.webp" />,
+    description: 'Copilot with a 1 million token context window.',
+    features: [
+      '1 million token context window',
+      'Compatible with VS Code, JetBrains, and Neovim',
+      'GPT-4 and Claude 3.5 Sonnet integration',
+      'Advanced chat interface',
+      'Free tier available, Pro at $10/month'
+    ],
+    link: 'https://supermaven.com',
+    experienceLevel: 'expert'
   }
 ];

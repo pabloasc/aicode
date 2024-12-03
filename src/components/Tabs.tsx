@@ -7,7 +7,7 @@ interface TabsProps {
 
 export function Tabs({ activeTab, onChange }: TabsProps) {
   const tabs = [
-    { id: 'all', label: 'All Assistants' },
+    { id: 'all', label: 'All Tools' },
     { id: 'beginner', label: 'Browser-based' },
     { id: 'expert', label: 'IDE-based' },
   ] as const;
