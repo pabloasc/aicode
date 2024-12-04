@@ -151,5 +151,20 @@ export const assistants: Assistant[] = [
     ],
     link: 'https://supermaven.com',
     experienceLevel: 'expert'
+  },
+  {
+    id: 'project-idx',
+    name: 'Project IDX',
+    icon: <img width={32} src="/project-idx.png" />, // You'll need to add this icon
+    description: 'Google\'s browser-based development experience powered by AI, offering features like code generation, chat, and more.',
+    features: [
+      'AI-powered code completion',
+      'Integrated development environment',
+      'Built-in preview',
+      'Chat with Gemini',
+      'Currently in Beta'
+    ],
+    link: 'https://idx.dev',
+    experienceLevel: 'beginner' // You can adjust this based on your assessment
   }
 ];

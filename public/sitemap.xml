@@ -2,67 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://aicode.fyi/</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/github-copilot</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/cursor</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/bolt</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/v0</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/tabnine</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/amazon-codewhisperer</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/replit</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/windsurf</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/lovable</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://aicode.fyi/assistant/supermaven</loc>
-    <lastmod>2024-03-19</lastmod>
+    <lastmod>2024-12-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aicode.fyi/assistant/project-idx</loc>
+    <lastmod>2024-12-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
