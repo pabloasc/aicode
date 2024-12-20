@@ -6,13 +6,13 @@ export const assistants: Assistant[] = [
     id: 'github-copilot',
     name: 'GitHub Copilot',
     icon: <GithubLogo size={32} weight="fill" />,
-    description: 'The pioneer in AI pair programming, offering real-time suggestions and whole-line completions powered by OpenAI Codex.',
+    description: 'AI pair programmer that helps you write code faster with smart suggestions and real-time completions across multiple IDEs.',
     features: [
-      'Real-time code suggestions',
-      'Multi-language support',
-      'VS Code & JetBrains integration',
-      'GitHub integration',
-      '$10/month or $100/year'
+      'Code completions in any language',
+      'Chat and CLI capabilities',
+      'VS Code, JetBrains, Neovim support',
+      'Security vulnerability filtering',
+      'Free Plan, $10/month or $100/year (Individual)'
     ],
     link: 'https://github.com/features/copilot',
     experienceLevel: 'expert'
